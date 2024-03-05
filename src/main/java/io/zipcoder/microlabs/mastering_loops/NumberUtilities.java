@@ -16,19 +16,26 @@ public class NumberUtilities {
         return null;
     }
 
-    public static String getRange(int start) {
-        return null;
+    public static String getRange(int stop) {
+
+        return getRange(0, stop, 1);
     }
 
     public static String getRange(int start, int stop) {
-        return null;
+
+        return getRange(start, stop, 1);
     }
 
     public static String getRange(int start, int stop, int step) {
-        return null;
+        //Use for loop
+        StringBuilder sb= new StringBuilder();
+        for(int i=start; i<stop; i += step)
+            sb.append(i);
+        return sb.toString();
     }
 
     public static String getExponentiations(int start, int stop, int step, int exponent) {
+
         return null;
     }
 }
